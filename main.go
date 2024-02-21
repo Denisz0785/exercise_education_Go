@@ -72,9 +72,9 @@ func main() {
 
 	search(8, 5)
 
-	src := make([]int, 6, 10)
+	src := make([]int, 7, 10)
 
-	for i := 0; i < 6; i++ {
+	for i := 0; i < 7; i++ {
 		src[i] = i * 3
 	}
 
@@ -94,4 +94,8 @@ func main() {
 
 	fmt.Println("search3:")
 	search3(95, 3)
+
+	fmt.Println(src)
+	SortArray(src)
+	fmt.Println(src)
 }
