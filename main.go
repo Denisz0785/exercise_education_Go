@@ -70,7 +70,7 @@ func search3(num, i int) {
 
 func main() {
 
-	search(8, 4)
+	search(8, 5)
 
 	src := make([]int, 6, 10)
 
