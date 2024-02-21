@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func search(num, i int) {
 	if i != 0 && num%i == 0 {
@@ -75,7 +78,7 @@ func main() {
 	src := make([]int, 7, 10)
 
 	for i := 0; i < 7; i++ {
-		src[i] = i * 3
+		src[i] = rand.Intn(10)
 	}
 
 	for i := 0; i < len(src)-1; i++ {
@@ -97,5 +100,8 @@ func main() {
 
 	fmt.Println(src)
 	SortArray(src)
+	fmt.Println(src)
+
+	InsertSorting(src)
 	fmt.Println(src)
 }

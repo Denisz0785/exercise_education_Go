@@ -1,1 +1,1 @@
-hello
+Code of some resolving some task thrugh education

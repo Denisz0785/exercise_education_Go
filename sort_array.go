@@ -16,3 +16,21 @@ func SortArray(src []int) {
 		}
 	}
 }
+
+func InsertSorting(src []int) {
+	leng := len(src)
+	for i := 1; i < leng; i++ {
+		tempIndex := i
+		tempValue := src[i]
+		for j := tempIndex - 1; j >= 0; j-- {
+			if tempValue < src[j] {
+				src[j+1] = src[j]
+				tempIndex--
+			}
+
+		}
+		if tempIndex != i {
+			src[tempIndex] = tempValue
+		}
+	}
+}
