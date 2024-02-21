@@ -17,6 +17,7 @@ func SortArray(src []int) {
 	}
 }
 
+// функция сортирует срез методом вставки
 func InsertSorting(src []int) {
 	leng := len(src)
 	for i := 1; i < leng; i++ {
