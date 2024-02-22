@@ -104,4 +104,27 @@ func main() {
 
 	InsertSorting(src)
 	fmt.Println(src)
+
+	//initialized variable of type struct
+	user := Data{
+		name:  "Denis",
+		email: "zv@google.com",
+		age:   30,
+	}
+
+	fmt.Printf("Name of user %s, email %s, age %d\n", user.name, user.email, user.age)
+
+	//anonymous struct
+	user2 := struct {
+		name  string
+		email string
+		age   int
+	}{
+		name:  "Ivan",
+		email: "r@r.eng",
+		age:   15,
+	}
+
+	fmt.Printf("Name of user %s, email %s, age %d\n", user2.name, user2.email, user2.age)
+
 }
