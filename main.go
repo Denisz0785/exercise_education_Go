@@ -113,6 +113,8 @@ func main() {
 	}
 
 	fmt.Printf("Name of user %s, email %s, age %d\n", user.name, user.email, user.age)
+	change(&user)
+	fmt.Printf("Name of user %s, email %s, age %d\n", user.name, user.email, user.age)
 
 	//anonymous struct
 	user2 := struct {
@@ -126,5 +128,7 @@ func main() {
 	}
 
 	fmt.Printf("Name of user %s, email %s, age %d\n", user2.name, user2.email, user2.age)
+
+	change(&user)
 
 }
